@@ -4,11 +4,13 @@ Basic TrimUI Brick Dev bits n bobs
 
 Assuming you have a mac
 Install brew from brew.sh if you no haz
+
 https://brew.sh and follow instructions..
 
+```bash
 #Install adb
 brew install --cask android-platform-tools
-
+```
 
 #copy all the files on here to your SD card and plug into the Brick
 
@@ -20,6 +22,7 @@ List of devices attached
 9c000c64a5444871add	device
 
 % adb shell
+```bash
  _____  _              __     _
 |_   _||_| ___  _ _   |  |   |_| ___  _ _  _ _
   | |   _ |   ||   |  |  |__ | ||   || | ||_'_|
@@ -32,7 +35,7 @@ List of devices attached
 root@TinaLinux:/#  cd /mnt/SDCARD/System
 
 root@TinaLinux:/mnt/SDCARD/System# ./setup.sh 
-
+```
 
 Starting setup
 This will:
@@ -46,7 +49,7 @@ root@TinaLinux:/mnt/SDCARD/System# reboot
 
 
 #wait 10-15 sec for the device to reboot
-
+```bash
 % adb shell
 
 adb shell
@@ -60,7 +63,7 @@ adb shell
  ----------------------------------------------
 COLUMNS=225;LINES=70;export COLUMNS LINES;
 
-
+```
 #You should see a columns;lines added now
 
 #/mnt/SDCARD/System/bin and below has binaries, and the shell should be more usable.
