@@ -12,7 +12,15 @@ https://brew.sh and follow instructions, then install adb if you don't already h
 brew install --cask android-platform-tools
 ```
 
-Make a System folder on your SD Card, and copy all the files from the repo into there, and then plug the SD Card into the Brick
+Download the repo contents to your computer in your Documents folder.
+```bash
+#Grab the repo
+cd ~/Documents
+git clone https://github.com/csloz/trimui_brick_dev.git 
+```
+
+
+Make a System folder on your SD Card, and copy all the files from the repo System folder into there, and then plug the SD Card into the Brick
 Then power up the brick,and it into usb so we can connect via usb ADB
 
 ```bash
@@ -99,9 +107,17 @@ eg
 #Run this on your brick in the adb shell
 killall -KILL runtrimui.sh MainUI
 ```
+
+
+
   
 TO DO
 
 Add local cross compiler and libs
 
+Add config for dropbear ssh and sftp etc
 
+
+
+Bonus image of board from retro_handhelds #brick
+![](trimui_board.png?raw=true)
