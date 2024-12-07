@@ -8,7 +8,7 @@ Install brew from brew.sh if you no haz
 https://brew.sh and follow instructions, then install adb if you don't already have it.
 
 ```bash
-#Install adb
+#Install adb.  Run this on your computer
 brew install --cask android-platform-tools
 ```
 
@@ -16,7 +16,7 @@ Make a System folder on your SD Card, and copy all the files from the repo into 
 Then power up the brick,and it into usb so we can connect via usb ADB
 
 ```bash
-#List connected devices
+#List connected devices.  Run this on your computer
 adb devices
 ```
 You should see a device list like below:
@@ -29,12 +29,13 @@ List of devices attached
 Assuming you have something like that, connect to it via adb:
 
 ```bash
-#Connect to our brick
+#Connect to our brick. Run this on your computer
 adb shell
 ```
 
 Should hopefully see a login shell like below.
-We can now install the tools into /etc and have the paths to libraries and tools added via setup.sh (as below)
+We can now install the tools into /etc and have the paths to libraries and tools added via setup.sh (as below).
+Type in the commands below from the shell on the brick
 
 ```bash
  _____  _              __     _
@@ -66,6 +67,7 @@ Wait 10-15 sec for the device to reboot
 
 
 ```bash
+#Run this on your computer
 adb shell
 
 ```
@@ -94,6 +96,7 @@ Note if you run any of the /mnt/System/bin/sdl_stuff, don't forget to kill MainU
 eg
 
 ```bash
+#Run this on your brick in the adb shell
 killall -KILL runtrimui.sh MainUI
 ```
   
