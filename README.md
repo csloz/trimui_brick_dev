@@ -1,6 +1,11 @@
 # trimui_brick_dev
 Basic TrimUI Brick Dev bits n bobs
 
+Uses stuff from:
+
+https://github.com/weimingtom/trimui_brick_playground
+https://github.com/kloptops/TRIMUI_EX/
+
 
 Assuming you have a mac
 Install brew from brew.sh if you no haz
