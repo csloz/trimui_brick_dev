@@ -89,6 +89,14 @@ COLUMNS=225;LINES=70;export COLUMNS LINES;
 /mnt/SDCARD/System/bin and below has binaries, and the shell should be more usable as it has more tools.
 wget has ssl capability now, etc
 
+
+Note if you run any of the /mnt/System/bin/sdl_stuff, don't forget to kill MainUI first
+eg
+
+```bash
+killall -KILL runtrimui.sh MainUI
+```
+  
 TO DO
 
 Add local cross compiler and libs
