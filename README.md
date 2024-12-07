@@ -17,12 +17,13 @@ brew install --cask android-platform-tools
 
 #plug device into, usb and connect via ADB
 
-% adb devices
+```bash
+adb devices
 List of devices attached
 9c000c64a5444871add	device
 
-% adb shell
-```bash
+adb shell
+
  _____  _              __     _
 |_   _||_| ___  _ _   |  |   |_| ___  _ _  _ _
   | |   _ |   ||   |  |  |__ | ||   || | ||_'_|
@@ -35,7 +36,7 @@ List of devices attached
 root@TinaLinux:/#  cd /mnt/SDCARD/System
 
 root@TinaLinux:/mnt/SDCARD/System# ./setup.sh 
-```
+
 
 Starting setup
 This will:
@@ -46,7 +47,7 @@ Done
 
 
 root@TinaLinux:/mnt/SDCARD/System# reboot
-
+```
 
 #wait 10-15 sec for the device to reboot
 ```bash
