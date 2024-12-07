@@ -18,12 +18,19 @@ brew install --cask android-platform-tools
 #plug device into, usb and connect via ADB
 
 ```bash
+#List connected devices
 adb devices
+```
+
 List of devices attached
 9c000c64a5444871add	device
 
+```bash
+#Connect to our brick
 adb shell
+```
 
+```bash
  _____  _              __     _
 |_   _||_| ___  _ _   |  |   |_| ___  _ _  _ _
   | |   _ |   ||   |  |  |__ | ||   || | ||_'_|
