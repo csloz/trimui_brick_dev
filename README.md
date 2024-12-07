@@ -5,7 +5,7 @@ Basic TrimUI Brick Dev bits n bobs
 Assuming you have a mac
 Install brew from brew.sh if you no haz
 
-https://brew.sh and follow instructions, then
+https://brew.sh and follow instructions, then install adb if you don't already have it.
 
 ```bash
 #Install adb
@@ -66,9 +66,13 @@ Wait 10-15 sec for the device to reboot
 
 
 ```bash
-% adb shell
-
 adb shell
+
+```
+
+You should now see an updated login similar to below
+
+```bash
  _____  _              __     _
 |_   _||_| ___  _ _   |  |   |_| ___  _ _  _ _
   | |   _ |   ||   |  |  |__ | ||   || | ||_'_|
@@ -80,9 +84,10 @@ adb shell
 COLUMNS=225;LINES=70;export COLUMNS LINES;
 
 ```
-#You should see a columns;lines added now
 
-#/mnt/SDCARD/System/bin and below has binaries, and the shell should be more usable.
+
+/mnt/SDCARD/System/bin and below has binaries, and the shell should be more usable as it has more tools.
+wget has ssl capability now, etc
 
 TO DO
 
