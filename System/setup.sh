@@ -56,5 +56,13 @@ if [ ! -f /etc/adb_profile.orig ]; then
   cp -vf /mnt/SDCARD/System/etc/adb_profile /etc/adb_profile
 fi
 
+#Add dropbear folder
+if [ ! -e /etc/dropbear ]; then
+   mkdir -p /etc/dropbear
+   echo "Added dropbear folder.  Note root password is tina"
+fi
+
+
+
 
 echo "Done"
