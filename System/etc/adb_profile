@@ -1,0 +1,18 @@
+#!/bin/sh
+. /etc/profile
+
+#color is good!
+alias ls='ls --color=yes'
+
+#resize terminal so we're not stuck in 80x25 land
+/usr/bin/resize
+
+#add path to our SDCARD binaries (if mounted)
+if [ -e /mnt/SDCARD/System ]; then 
+   export PATH="/mnt/SDCARD/System/bin:/usr/trimui/lib:$PATH"
+   export LD_LIBRARY_PATH="/usr/trimui/lib:/mnt/SDCARD/System/lib:$LD_LIBRARY_PATH"
+else
+   #add trimui lib path to LD_LIBRARY as many apps moan otherwise
+   export "LD_LIBRARY_PATH=/usr/trimui/lib:$LD_LIBRARY_PATH"
+fi 
+

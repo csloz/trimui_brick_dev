@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "Clearing Display (ignore error)"
+cat /dev/zero > /dev/fb0 
